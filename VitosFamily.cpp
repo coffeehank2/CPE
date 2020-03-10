@@ -31,5 +31,7 @@ int main()
             distance += abs(int(lives) - s[k]);
         }
         cout << distance;
+        distance = 0;
     }
+    return 0;
 }
