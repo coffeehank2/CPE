@@ -3,11 +3,19 @@ using namespace std;
 
 int main()
 {
-    int a = 0, b = 0;
-
-    while (cin >> a >> b)
+    int a, b;
+    while (cin >> a)
     {
-        cout << abs(a - b);
+        if (a != -1)
+        {
+            cin >> b;
+            cout << abs(a - b);
+        }
+        else
+        {
+            break;
+        }
     }
+
     return 0;
 }
